@@ -24,7 +24,7 @@ body {
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .title {
@@ -67,12 +67,13 @@ body {
   margin-top: 30px;
 }
 
-.js-resetScore{
+.js-resetScore {
   color: rgb(248, 190, 44);
   padding-top: 5px;
 }
 
-.resetScore, .auto-play {
+.resetScore,
+.auto-play {
   background-color: white;
   border: none;
   font-size: 16px;
@@ -83,7 +84,8 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.resetScore:hover, .auto-play:hover {
+.resetScore:hover,
+.auto-play:hover {
   background-color: rgb(248, 190, 44);
   color: black;
 }
@@ -120,8 +122,17 @@ body {
   color: black;
 }
 
-
 @media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
   .move-button {
     height: 100px;
     width: 100px;
@@ -132,7 +143,21 @@ body {
     height: 40px;
   }
 
-  .resetScore, .auto-play, .resetQuestion2 button {
+  .result {
+    font-size: 18px;
+  }
+
+  .move {
+    font-size: 16px;
+  }
+
+  .score {
+    font-size: 16px;
+  }
+
+  .resetScore,
+  .auto-play,
+  .resetQuestion2 button {
     font-size: 14px;
     padding: 8px 16px;
   }
@@ -140,12 +165,13 @@ body {
 
 @media (max-width: 480px) {
   .container {
+    width: 100%;
     padding: 10px;
-    width: 90%; 
+    margin: 10px 0;
   }
 
   .title {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .move-button {
@@ -158,11 +184,79 @@ body {
     height: 30px;
   }
 
-  .result, .move, .score {
+  .result {
     font-size: 16px;
   }
 
-  .resetScore, .auto-play, .resetQuestion2 button {
+  .move {
+    font-size: 14px;
+  }
+
+  .score {
+    font-size: 14px;
+  }
+
+  .reset-question p{
+    font-size: 12px;
+  }
+
+  .reset-question button{
+    margin: 0 5px;
+  }
+
+  .resetQuestion2{
+    padding: 10px;
+  }
+
+  .resetQuestion2 p{
+    padding-bottom: 0;
+    margin-bottom: 10px;
+  }
+
+  .resetScore,
+  .auto-play,
+  .resetQuestion2 button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 400px){
+  body{
+    padding: 8px;
+  }
+}
+
+@media (max-width: 300px){
+  .title {
+    font-size: 18px;
+  }
+
+  .move-button {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+  }
+
+  .move-icon {
+    height: 30px;
+  }
+
+  .result {
+    font-size: 16px;
+  }
+
+  .move {
+    font-size: 14px;
+  }
+
+  .score {
+    font-size: 14px;
+  }
+
+  .resetScore,
+  .auto-play,
+  .resetQuestion2 button {
     font-size: 12px;
     padding: 6px 12px;
   }
