@@ -160,7 +160,7 @@ function rockPaperScissor(playerMove) {
     .innerHTML = result;
 
   document.querySelector('.js-move')
-    .innerHTML = `You <img class="move-icon" src="/images/${playerMove}-emoji.png" alt=""> <img class="move-icon" src="/images/${computerMove}-emoji.png" alt="">
+    .innerHTML = `You <img class="move-icon" src="./images/${playerMove}-emoji.png" alt=""> <img class="move-icon" src="./images/${computerMove}-emoji.png" alt="">
     Computer`;
 
   document.querySelector('.js-resetScore')
